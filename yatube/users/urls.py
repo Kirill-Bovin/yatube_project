@@ -25,3 +25,4 @@ urlpatterns = [
         name='password_reset_form'
     ),
 ]
+
