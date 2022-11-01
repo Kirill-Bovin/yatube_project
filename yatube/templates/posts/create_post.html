@@ -11,7 +11,7 @@
               <div class="card-body">        
                 <form method="post" href="{% url 'posts:post_create' %}">
                   {% csrf_token %}
-                  <input type="hidden" name="csrfmiddlewaretoken" value="">            
+                  
                   <div class="form-group row my-3 p-3">
                     <label for="id_text">
                       Текст поста                  
