@@ -130,3 +130,12 @@ dmypy.json
 
 
 .vscode/
+
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+media/
+.media/

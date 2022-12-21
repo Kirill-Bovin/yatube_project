@@ -6,7 +6,12 @@ SECRET_KEY = '$ct!ch5cvzq=5g()l5^xt^#9hz=z3ib^=c#tykfth#pkeuf2^t'
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '[::1]',
+    'testserver',
+]
 
 INSTALLED_APPS = [
     'posts.apps.PostsConfig',
@@ -99,3 +104,23 @@ LOGIN_REDIRECT_URL = 'posts:index'
 EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
 
 EMAIL_FILE_PATH = os.path.join(BASE_DIR, 'sent_emails')
+
+FIRST_CHARACTERS_POST = 16
+
+NUMBER_OF_ITERATIONS = 13
+
+MAX_NUMB_ENTRIES = 10
+
+TEMP_NUMB_SECOND_PAGE = 3
+
+TEST_OF_POST = 13
+
+FIRST_OF_POSTS = 10
+
+PAGE_LIMIT = 10
+
+PAGE_LIMIT_SECOND_PAGE = 3
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+

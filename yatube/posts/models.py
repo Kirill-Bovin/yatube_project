@@ -22,7 +22,7 @@ class Group(models.Model):
 
 class Post(models.Model):
 
-    text = models.TextField('Текст поста')
+    text = models.TextField('Текст поста', help_text='Введите текст')
     pub_date = models.DateTimeField('Дата', auto_now_add=True)
     group = models.ForeignKey(
         Group,
@@ -31,7 +31,7 @@ class Post(models.Model):
         null=True,
         on_delete=models.SET_NULL,
         related_name='posts',
-
+        help_text='Группа, к которой будет относиться пост'
     )
 
     author = models.ForeignKey(
